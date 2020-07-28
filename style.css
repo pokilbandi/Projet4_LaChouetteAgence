@@ -92,7 +92,7 @@ a:hover {
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+    background-size: 140px 140px;
 }
 
 .b-parallax {
@@ -442,7 +442,7 @@ nav .caret {
 
 .mg-lg {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -658,12 +658,8 @@ a {
     max-width: 1000px;
 }
 
-.hero-bloc-text {
-    font-size: 38px;
-}
-
 .hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .statement-bloc-text {
@@ -681,6 +677,7 @@ p {
 }
 
 .tight-width-whitespace {
+    font-size: medium;
     max-width: 600px;
     margin: auto auto auto auto;
 }
@@ -771,20 +768,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #16c464;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #16c464;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #16c464!important;
     color: #FFFFFF!important;
 }
 
@@ -797,11 +794,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #16c464!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #16c464!important;
 }
 
 .icon-dark-slate-blue {
@@ -822,8 +819,111 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.png");
+    background-image: url("img/image-de-presentation.jpg");
 }
+.overlay {
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    display:none;
+    }
+
+.popup{
+    margin: auto;
+    width : 70%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    }
+
+.btnClose {
+    float: right;
+    font-size:16pt;
+    cursor: pointer;
+    color: rgb(26, 26, 26);
+    }
+
+.heading_contact {
+    width: 100%;
+    height: 30%;
+    background-color: #16c464;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.39);;
+    min-height: 160px;
+}
+.header_contact > .row {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.accroche_contact {
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);;
+    color: #fff!important;
+    padding-left: 20px;
+}
+.intention_contact {
+    color: #fff!important;
+    font-size: 10pt;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.img_contact_form {
+    height: 160px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+}
+.contacter_equipe {
+    color: #fff!important;
+}
+.contacter_equipe > a {
+    display: flex;
+    justify-content: center;
+    color: #fff!important;
+    text-decoration: underline;
+    font-size: 12pt;
+}
+.partenaires {
+    margin-top: 30px;
+    color: #00000096;
+} 
+
+li {
+    list-style-type: none;
+    float: left;
+    margin-left:2px;
+}
+ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+ul li a {
+    display:block;
+    float:left;   
+    width:100px;
+    text-align:center;
+    padding:5px;
+}
+
+
+.slogan > p {
+    font-size: 12pt;
+}
+
+.page-container {
+    overflow-y: initial !important
+    
+}
+
+#bloc-7 {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -890,6 +990,17 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .popup{
+        width : 100%;
+        padding: 1em;
+        }
+    .accroche_contact {
+        font-weight: bold;
+        font-size: 10pt;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);;
+        color: #fff!important;
+        padding-left: 20px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1027,6 +1138,7 @@ h4 {
         height: 320px;
     }
 }
+
 
 @media (max-width: 400px) {
     .bloc {
